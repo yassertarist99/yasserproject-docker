@@ -1,0 +1,16 @@
+exercice 3:
+
+1- docker-compose build
+ou docker build -t my-image .
+
+2-docker-compose up -d
+
+3-docker ps
+
+4-docker-compose down
+
+‏Bonus : Quel est l’avantage principal de Docker Compose dans une architecture microservices ?
+
+‏L’avantage principal de Docker Compose est qu’il permet de définir, configurer et lancer plusieurs services (conteneurs) en même temps à partir d’un seul fichier docker-compose.yml, ce qui simplifie la gestion et le déploiement des microservices.
+
+
