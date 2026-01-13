@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "4002:4002"
+    depends_on:
+      - mongo
+
+  commond-service:
+    build: ./commond-service
+    ports:
+      - "4001:4001"
+    depends_on:
+      - mongo
+
+  produit-service:
+    build: ./produit-service
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+    - "27018:27017"  
